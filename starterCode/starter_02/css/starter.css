@@ -1,0 +1,9 @@
+/* Our local cascading stylesheet */
+
+h1 {
+    color: red;
+}
+
+#start_div {
+    color: blue;
+}
