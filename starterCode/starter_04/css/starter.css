@@ -20,7 +20,19 @@ svg {
     background-color: white;
     margin: 50px;
     margin-left: 100px;
+    font: 10px sans-serif;
 }
 
+.axis {
+    shape-rendering: crispEdges;
+}
 
+.axis line, .axis path {
+    stroke: black;
+    fill: none;
+}
+
+.chartTitle {
+    font-size: 18px;
+}
     

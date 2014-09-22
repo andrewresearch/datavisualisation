@@ -1,7 +1,7 @@
 Data visualisation with Javascript
 =================
 
-This repository includes support resources for a presentation to [QUT](http://www.qut.edu.au) postgrad students on the use of d3.js to help with visualisation of their research data.
+This repository includes support resources for a presentation to [QUT](http://www.qut.edu.au) postgrad students on the use of [d3.js](http://d3js.org/) to help with visualisation of their research data.
 
 ### Contents
 
