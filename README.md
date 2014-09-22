@@ -9,10 +9,10 @@ This repository includes support resources for a presentation to [QUT](http://ww
 * Presentation slides
 * Starter code
     - starter_01 -> used with Javascript and HTML basics 1-4
-    - starter_02 -> used with Essential d3.js Concepts 1 & 2
-    - starter_03 -> used with Simple visualisations (Bar charts)
+    - starter_02 -> used with Essential d3.js Concepts 1
+    - starter_03 -> used with Essential d3.js Concepts 2
     - starter_04 -> used with Simple visualisations (Line charts)
-    - starter_05 -> used with Simple visualisations (Pie charts)
+    - starter_05 -> used with Simple visualisations (Bar charts)
     - starter_06 -> used with Interactive visualisations
 * Completed examples
 * Other resources

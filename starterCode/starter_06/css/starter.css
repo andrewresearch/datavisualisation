@@ -1,0 +1,38 @@
+/* Main CSS */
+
+body {
+    background-color: #333;
+    margin: 50px;
+    font-family: sans-serif;
+}
+
+h2 {
+    color:#fff;
+}
+
+p {
+    color:#ccc;
+    font-size: 18px;
+}
+
+svg {
+    border-style: groove;
+    background-color: white;
+    margin: 50px;
+    margin-left: 100px;
+    font: 10px sans-serif;
+}
+
+.axis {
+    shape-rendering: crispEdges;
+}
+
+.axis line, .axis path {
+    stroke: black;
+    fill: none;
+}
+
+.chartTitle {
+    font-size: 18px;
+}
+    
