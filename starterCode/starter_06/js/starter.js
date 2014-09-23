@@ -51,18 +51,19 @@ var dataReady = function(error, data) {
         .enter()
         .append("rect")
         .attr("x",function(d,i) {return x(new Date(2014,i,1));})
+        //.attr("y", function(d) {return y(d.sales);})
         .attr("y",H)
         .attr("width", 10)
         .attr("height",0)
         .transition()
-        .delay(function(d, i) { return i * 250 })
-        .duration(750)
+        .delay(function(d, i) { return i * 1000 })
+        .duration(2000)
         .attr("y", function(d) {return y(d.sales);}) //the top of the bar
         .attr("height", function(d) {return H - y(d.sales);}) //the length of the bar
         .style("fill","navy");
 
     //Circle to mark the actual data points
-    
+    /*
     svg_bar.selectAll("circle")
         .data(data)
         .enter()
@@ -70,7 +71,7 @@ var dataReady = function(error, data) {
         .attr("cx", function(d,i) {return x(new Date(2014,i,1));})
         .attr("cy", function(d) {return y(d.sales);})
         .attr("r", 4)
-        .style("fill","orange"); 
+        .style("fill","orange"); */
     
     // Create the axes
     var xAxis = d3.svg.axis()

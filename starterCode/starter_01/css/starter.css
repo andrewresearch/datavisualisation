@@ -1,9 +1,16 @@
 /* Our local cascading stylesheet */
 
+body {
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
 h1 {
-    color: red;
+    color: rgb(0,128,256);
+    font-family: sans-serif;
 }
 
 #start_div {
-    color: blue;
+    color: #666666;
+    font-family: cursive;
 }

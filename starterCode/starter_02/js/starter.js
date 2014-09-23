@@ -1,7 +1,7 @@
 // Our first d3.js code
 
 //Our data for these examples - try changing these values and see what happens
-var data = [20,40,60,80,100];
+var data = [20,30,40,50,60,70,80,90,100];
 
 /*
 We're mostly interested in drawing graphics, but we can actually use d3 to
@@ -12,7 +12,7 @@ are not there based on our data set. Take a look at this code...
 */
 
 var indexAndValue = function(d,i) {
-                        return "The value at index "+i+" is "+d;
+                    return "The value at index "+i+" is "+d;
                     }
 //Uncomment the code below to see how this function works
 /*
@@ -41,14 +41,14 @@ draw our graphics.
 */
 
 //Canvas size
-var WIDTH = 400, HEIGHT = 300;
+var WIDTH = 500, HEIGHT = 300;
 
 var svg = d3.select("#svgcanvas").append("svg")
                 .attr("width", WIDTH)
                 .attr("height", HEIGHT); 
 
 //Create circles for our data - note that 0,0 is top left and that 400,300 is bottom right.
-/*
+
 svg.selectAll("circle")
     .data(data)
     .enter()
@@ -57,7 +57,7 @@ svg.selectAll("circle")
     .attr("cy", HEIGHT/2)
     .attr("r", function(d) {return d/2;})
     .style("fill",  function(d) { return "rgb("+ (d+50) +","+(d*2)+","+(d*1.4)+")"; });
-*/
+
 /* 
 NOTE: When we need to modify the style dynamically, like in the code above, then we can
 use the style method of d3. Otherwise, it's better to do the styling with CSS.

@@ -51,6 +51,7 @@ var dataReady = function(error, data) {
         .attr("stroke","blue")
         .attr("stroke-width",2)
         .attr("fill","none");
+   
     
     // Create the axes
     var xAxis = d3.svg.axis()

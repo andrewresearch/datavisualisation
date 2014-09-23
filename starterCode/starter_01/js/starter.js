@@ -4,10 +4,11 @@
 // A function that we can call on startup
 var startupFunction = function (message) {
     console.log("The message is: " + message);
+    alert(message);
 };
 var myMessage = "The startup function has been called";
 //Uncomment the beginning of the next line to call the startupFunction
-//startupFunction(myMessage); 
+startupFunction(myMessage); 
 
 
 //Now modify your startupFunction above to create an alert with a new message
@@ -22,6 +23,8 @@ var changePageColour = function(colour) {
     console.log("Changing page colour to: " + colour);
     d3.select("body").style("background-color",colour);
 }
+
+changePageColour("white");
 
 
 // Let's try creating an SVG canvas and adding a graphic object to it
@@ -39,5 +42,6 @@ var drawCircle = function(data) {
 
 }
 
+drawCircle();
 // When you display the circle, it will be black - how do we change it's colour?
 // Experiment with changing it's size and position also.

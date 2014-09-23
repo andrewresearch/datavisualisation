@@ -9,6 +9,8 @@ var margin = {top: 20, right: 20, bottom: 20, left: 20};
 var W = WIDTH - margin.left - margin.right;
 var H = HEIGHT - margin.top - margin.bottom;
 
+var diamondSize = 30;
+
 //Setup the SVG element
 var svg = d3.select("#svgcanvas").append("svg")
                 .attr("width", WIDTH)
@@ -17,6 +19,7 @@ var svg = d3.select("#svgcanvas").append("svg")
 // Set the ranges - the domain is set once we have the data
 var x = d3.time.scale().range([0, W]);
 var y = d3.scale.linear().range([H, 0]);
+
 
 //This function is called when the data is loaded
 var dataReady = function(error, data) {
@@ -49,7 +52,6 @@ var dataReady = function(error, data) {
     Uncomment the following block to try it out...
     */
     
-    /*
     var diamond = function(x,y,size) {
         var s = size/2;
         return(""+x+","+(y+s)+" "+
@@ -62,13 +64,14 @@ var dataReady = function(error, data) {
         .data(data)
         .enter()
         .append("polygon")
-        .attr("points", function(d,i) { return diamond(x(i),y(d.sales),20); })
+        .attr("points", function(d,i) { return diamond(x(i),y(d.sales),diamondSize); })
         .attr("stroke", "green")
         .attr("stroke-width", "2")
         .attr("fill", "none");
-    */
+    
     
 } // end dataReady function
 
 //Load the data - the anon function ensure the type for sales is a number
+//d3.csv("filename", accessorFunction, callBackFunction);
 d3.csv("data/myData.csv", function(d) { return {month: d.month, sales: +d.sales};}, dataReady);
